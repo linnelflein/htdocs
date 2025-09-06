@@ -1,8 +1,4 @@
-/*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    +
-    + Fonts
-    +
-    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@charset "UTF-8";
 
 /* cyrillic-ext */
 @font-face {
@@ -2772,76 +2768,80 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Noto Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 body {
-  background-image: url('neuss.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+	background-image: url('neuss.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }
 
 .overlay {
-  background-color: rgba(255, 248, 220, 0.65); /* heller, transparenter */
-  padding: 1.2em;
-  border-radius: 6px 6px 0 0;
-  text-align: center;
-  color: #2c2c2c;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 1.5rem 8vh 1.5rem; /* Horizontaler Auﬂenabstand hinzugef¸gt */
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 1.5s ease-out both;
-  will-change: opacity, transform;
+	background-color: rgba(255, 248, 220, 0.65);
+	padding: 1.2em;
+	border-radius: 6px 6px 0 0;
+	text-align: center;
+	color: #2c2c2c;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 1.5rem 8vh 1.5rem;
+	/* Horizontaler Au√üenabstand hinzugef√ºgt */
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 1.5s ease-out both;
+	will-change: opacity, transform;
 }
 
 h1 {
-  margin: 0 0 0.2em 0; /* kleinerer Abstand unten */
-  font-size: 2em;
-  font-weight: 600;
+	margin: 0 0 0.2em 0;
+	font-size: 2em;
+	font-weight: 600;
 }
 
 h2 {
-  margin: 0 0 0.5em 0; /* kleinerer Abstand oben */
-  font-size: 1.6em;
-  font-weight: 600;
-  color: #2c2c2c;
+	margin: 0 0 0.5em 0;
+	font-size: 1.6em;
+	font-weight: 600;
+	color: #2c2c2c;
 }
 
 .contact p {
-  margin: 0.3em 0;
-  font-size: 1.05em;
+	margin: 0.3em 0;
+	font-size: 1.05em;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+	from { 
+	   opacity: 0;
+	   transform: translateY(20px);
+    }
+    to {
+	   opacity: 1;
+	   transform: translateY(0);
+    }
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.7em;
-  }
-
-  .contact p {
-    font-size: 0.95em;
-  }
-
-  .overlay {
-    padding: 1em;
-    margin: 0 1rem 6vh 1rem; /* Etwas mehr Luft auf kleinen Screens */
-  }
+@media ( max-width : 600px) {
+	h1 {
+		font-size: 1.7em;
+	}
+	.contact p {
+		font-size: 0.95em;
+	}
+	.overlay {
+		padding: 1em;
+		margin: 0 1rem 6vh 1rem;
+	}
 }
 
-span.email
-{
-   unicode-bidi: bidi-override;
-   direction: rtl;
+span.email {
+	unicode-bidi: bidi-override;
+	direction: rtl;
 }
